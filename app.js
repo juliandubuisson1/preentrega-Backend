@@ -36,55 +36,6 @@ const conectMongoDB = async() => {
     const DB_URL = 'mongodb+srv://julianDubuisson:<password>@cluster0.gtbwigq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
     try {                       
         await mongoose.connect(DB_URL)
-        // await productsModel.insertMany(
-        //     [
-        //         {
-        //             title: "Producto 1",
-        //             description: "Descripción del producto 1",
-        //             price: 100,
-        //             thumbnail: "xxxxx.jpg",
-        //             code: "ABC1",
-        //             stock: 10,
-        //             status: true
-        //         },
-        //         {
-        //             title: "Producto 2",
-        //             description: "Descripción del producto 2",
-        //             price: 100,
-        //             thumbnail: "xxxxx.jpg",
-        //             code: "ABC2",
-        //             stock: 10,
-        //             status: true
-        //         },
-        //         {
-        //             title: "Producto 3",
-        //             description: "Descripción del producto 3",
-        //             price: 100,
-        //             thumbnail: "xxxxx.jpg",
-        //             code: "ABC3",
-        //             stock: 10,
-        //             status: true
-        //         },
-        //         {
-        //             title: "Producto 4",
-        //             description: "Descripción del producto 4",
-        //             price: 100,
-        //             thumbnail: "xxxxx.jpg",
-        //             code: "ABC4",
-        //             stock: 10,
-        //             status: true
-        //         },
-        //         {
-        //             title: "Producto 5",
-        //             description: "Descripción del producto 5",
-        //             price: 100,
-        //             thumbnail: "xxxxx.jpg",
-        //             code: "ABC5",
-        //             stock: 10,
-        //             status: true
-        //         }
-        //     ]
-        // )
         console.log("Conectado a MongoDB")
     } catch (error) {
         console.log("No se pudo conectar a la DB",error)
